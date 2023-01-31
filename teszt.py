@@ -1,2 +1,2 @@
 import név
-név.eredemény()
+név.kiiras(név.eredemeny([5,5,11,5],[11,11,1]))
