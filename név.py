@@ -21,5 +21,18 @@ def eredemeny(geplapok, jlapok):
 
 
 # teszt esetek
-def kiiras(szoveg):
-    print(szoveg)
+    def teszt_esetek():
+        jatekos_vesztett_teszt()
+
+    def jatekos_vesztett_teszt():
+        jatekos = [10, 9, 3]
+        gep = [10, 9]
+        vart_eredmeny = "j vesztett"
+        kapott_eredmeny = eredemeny(gep, jatekos)
+        if kapott_eredmeny == vart_eredmeny:
+            print("teszt sikeres")
+        else:
+            print("nem sikerult")
+
+    teszt_esetek()
+
