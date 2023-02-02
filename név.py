@@ -40,6 +40,7 @@ def jatekos_vesztett():
 
 
 def r_gep21():
+    print("gép elérte a 21 et a játékos nem teszt:")
     jatekos = [10, 6, 4]
     gep = [10, 11]
     vart_eredmeny = "j vesztett"
@@ -51,6 +52,7 @@ def r_gep21():
 
 
 def r_gep21_21kevesebblap():
+    print("gép elérte a 21 et kevesebb lapbol teszt")
     jatekos = [10, 6, 5]
     gep = [10, 11]
     vart_eredmeny = "j vesztett"
@@ -62,6 +64,7 @@ def r_gep21_21kevesebblap():
 
 
 def r_tultoltes():
+    print("Játékos tul lépte 21 teszt:")
     jatekos = [10, 9, 3]
     gep = [10, 9]
     vart_eredmeny = "j veszett"
