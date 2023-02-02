@@ -7,7 +7,7 @@ def pontszamitas(lapok):
     return ertek
 
 
-def eredemeny(geplapok, jlapok):
+def eredemeny(jlapok , geplapok ):
     gep = pontszamitas(geplapok)
 
     j = pontszamitas(jlapok)
@@ -19,20 +19,55 @@ def eredemeny(geplapok, jlapok):
     elif j > 21:
         return "j vesztett"
 
+    # teszt esetek
 
-# teszt esetek
-    def teszt_esetek():
-        jatekos_vesztett_teszt()
 
-    def jatekos_vesztett_teszt():
-        jatekos = [10, 9, 3]
-        gep = [10, 9]
-        vart_eredmeny = "j vesztett"
-        kapott_eredmeny = eredemeny(gep, jatekos)
-        if kapott_eredmeny == vart_eredmeny:
-            print("teszt sikeres")
-        else:
-            print("nem sikerult")
+def teszt_esetek():
+    jatekos_vesztett()
+    r_gep21()
+    r_gep21_21kevesebblap()
+    r_tultoltes()
 
-    teszt_esetek()
+def jatekos_vesztett():
+    jatekos = [10, 9, 3]
+    gep = [10, 9]
+    vart_eredmeny = "j vesztett"
+    kapott_eredmeny = eredemeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("a jatekos_vesztett teszt sikeres")
+    else:
+        print("a jatekos_vesztett teszt megbukott")
 
+
+def r_gep21():
+    jatekos = [10, 6, 4]
+    gep = [10, 11]
+    vart_eredmeny = "j vesztett"
+    kapott_eredmeny = eredemeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("a jatekos_vesztett teszt sikeres")
+    else:
+        print("a jatekos_vesztett teszt megbukott")
+
+
+def r_gep21_21kevesebblap():
+    jatekos = [10, 6, 5]
+    gep = [10, 11]
+    vart_eredmeny = "j vesztett"
+    kapott_eredmeny = eredemeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("a jatekos_vesztett teszt sikeres")
+    else:
+        print("a jatekos_vesztett teszt megbukott")
+
+
+def r_tultoltes():
+    jatekos = [10, 9, 3]
+    gep = [10, 9]
+    vart_eredmeny = "j veszett"
+    kapott_eredmeny = eredemeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("a jatekos_vesztett teszt sikeres")
+    else:
+        print("a jatekos_vesztett teszt megbukott")
+teszt_esetek()
